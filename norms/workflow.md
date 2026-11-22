@@ -41,3 +41,4 @@
 - [ ] 项目校验与 GitHub 策略校验都绿：`check-project-contract`、`check-github-policy`。
 - [ ] 分支只剩 main、工作区干净、`TEMP/` 只剩 `.gitkeep`。
 - [ ] `log/` 补一节这次的决策与遗留；新踩的坑进 `log/learnings.md`。
+- [ ] 只记有复用价值的决策与教训；仓库自身的维护流水（改名、重建、搬家）不记。
