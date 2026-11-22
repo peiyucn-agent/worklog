@@ -28,5 +28,6 @@
 
 - **成就与贡献按「动作」归属，不按仓库归属**：你在别人仓库里做的事照样记在你名下。
 - **`gh pr merge` 只是合并，不产生 review 记录**：需要审阅的仓库要先 `gh pr review --approve` 再合，否则会被「至少 1 个批准」「last push approval」这类规则拒掉。
+- **作者不能批准自己的 PR**：想走「先批准再合并」的流程时，批准必须来自另一个账号。
 - **`gh` 与 `gh-agent` 的 token scope 不同**，能力边界也不同：动手前先看清楚，别假设对方能做。
 - **token 没有 `delete_repo` 权限就删不了仓库**：`DELETE /repos/{owner}/{repo}` 返回 403「Must have admin rights」。替代做法是旧仓库改名留档、新建同名仓库；真要删只能网页操作。
