@@ -22,6 +22,7 @@
 ## 工具
 
 - 长 shell 命令里的嵌套引号容易被打断：写成脚本文件再 `sh` 它，比内联一长串稳。
+- **GraphQL 传多行文本要用变量**：把带换行的内容直接写进 query 字符串会报 `Expected string or block string, but it was malformed`；改成 `-f body="$BODY"` 由变量传入即可。
 
 ## GitHub 账号与权限
 
