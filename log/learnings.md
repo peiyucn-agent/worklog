@@ -23,3 +23,5 @@
 ## 工具
 
 - 长 shell 命令里的嵌套引号容易被打断：写成脚本文件再 `sh` 它，比内联一长串稳。
+
+- **token 没有 `delete_repo` 权限就删不了仓库**：`DELETE /repos/{owner}/{repo}` 返回 403「Must have admin rights」。替代做法是旧仓库改名留档、新建同名仓库；真要删只能网页操作。
